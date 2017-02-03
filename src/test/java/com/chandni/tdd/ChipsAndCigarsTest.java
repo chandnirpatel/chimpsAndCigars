@@ -25,4 +25,15 @@ public class ChipsAndCigarsTest {
 
         assertEquals(true, isAwesomeParty);
     }
+//
+//  This test does not fail with the current state of my code so it is not needed. I will go to the next test that will fail with my code.
+//    @Test
+//    public void shouldBeSuccessfulPartyIfThereAreLotsOfCigarsOnTheWeeekend() throws Exception {
+//        int moreThanEnoughCigars = 70;
+//        boolean isWeekend = true;
+//
+//        boolean isAwesomeParty = new ChipsAndCigars().cigarPary(moreThanEnoughCigars, isWeekend);
+//
+//        assertEquals(true, isAwesomeParty);
+//    }
 }
