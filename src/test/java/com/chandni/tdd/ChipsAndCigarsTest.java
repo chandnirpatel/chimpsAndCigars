@@ -8,14 +8,20 @@ public class ChipsAndCigarsTest {
 
     @Test
     public void shouldBeUnsuccessfulPartyIfThereAreOnly30Cigars() throws Exception {
-        boolean isAwesomeParty = new ChipsAndCigars().cigarPary(30, false);
+        int notEnoughCigars = 30;
+        boolean isWeekend = false;
+
+        boolean isAwesomeParty = new ChipsAndCigars().cigarPary(notEnoughCigars, isWeekend);
 
         assertEquals(false, isAwesomeParty);
     }
 
     @Test
     public void shouldBeSuccessfulPartyIfThereAre50Cigars() throws Exception {
-        boolean isAwesomeParty = new ChipsAndCigars().cigarPary(50, false);
+        int moreThanEnoughCigars = 50;
+        boolean isWeekend = false;
+
+        boolean isAwesomeParty = new ChipsAndCigars().cigarPary(moreThanEnoughCigars, isWeekend);
 
         assertEquals(true, isAwesomeParty);
     }

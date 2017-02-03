@@ -2,11 +2,9 @@ package com.chandni.tdd;
 
 public class ChipsAndCigars {
 
-    public boolean cigarPary(int numOfCigars, boolean isWeekend) {
+    private int minCigarsForParty = 40;
 
-        if (numOfCigars >= 40) {
-            return true;
-        }
-        return false;
+    public boolean cigarPary(int numOfCigars, boolean isWeekend) {
+        return numOfCigars >= minCigarsForParty ? true : false;
     }
 }
