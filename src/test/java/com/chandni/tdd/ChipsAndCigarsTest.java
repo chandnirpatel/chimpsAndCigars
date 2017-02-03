@@ -7,9 +7,10 @@ import static org.junit.Assert.*;
 public class ChipsAndCigarsTest {
 
     @Test
-    public void sanityCheck() throws Exception {
+    public void shouldBeUnsuccessfulPartyIfThereAreOnly30Cigars() throws Exception {
+        ChipsAndCigars chipsAndCigars = new ChipsAndCigars();
+        boolean isAwesomeParty = chipsAndCigars.cigarPary(30, false);
 
-        assertEquals(true, true);
-
+        assertEquals(false, isAwesomeParty);
     }
 }
