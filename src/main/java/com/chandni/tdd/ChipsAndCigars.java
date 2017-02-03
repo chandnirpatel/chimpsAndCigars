@@ -6,6 +6,9 @@ public class ChipsAndCigars {
     private int maxCigarsForParty = 60;
 
     public boolean cigarPary(int numOfCigars, boolean isWeekend) {
+        if (isWeekend) {
+            return numOfCigars >= minCigarsForParty;
+        }
         return isAppropriateNumOfCigars(numOfCigars) ? true : false;
     }
 
