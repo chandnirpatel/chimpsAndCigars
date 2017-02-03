@@ -12,4 +12,11 @@ public class ChipsAndCigarsTest {
 
         assertEquals(false, isAwesomeParty);
     }
+
+    @Test
+    public void shouldBeSuccessfulPartyIfThereAre50Cigars() throws Exception {
+        boolean isAwesomeParty = new ChipsAndCigars().cigarPary(50, false);
+
+        assertEquals(true, isAwesomeParty);
+    }
 }
