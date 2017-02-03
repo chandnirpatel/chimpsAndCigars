@@ -8,8 +8,9 @@ public class ChipsAndCigars {
     public boolean cigarPary(int numOfCigars, boolean isWeekend) {
         if (isWeekend) {
             return numOfCigars >= minCigarsForParty;
+        } else {
+            return isAppropriateNumOfCigars(numOfCigars);
         }
-        return isAppropriateNumOfCigars(numOfCigars) ? true : false;
     }
 
     private boolean isAppropriateNumOfCigars(int numOfCigars) {
