@@ -36,4 +36,16 @@ public class ChipsAndCigarsTest {
 //
 //        assertEquals(true, isAwesomeParty);
 //    }
+
+    @Test
+    public void shouldBeUnsuccessfulPartyIfThereAreTooManyCigarsAndItIsNotTheWeekend() throws Exception {
+        int tooManyCigars = 70;
+        boolean isWeekend = false;
+
+        boolean isAwesomeParty = new ChipsAndCigars().cigarPary(tooManyCigars, isWeekend);
+
+        assertEquals(false, isAwesomeParty);
+    }
+
+
 }
